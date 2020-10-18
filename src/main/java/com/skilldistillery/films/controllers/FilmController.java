@@ -20,7 +20,7 @@ import com.skilldistillery.film.entities.Film;
 public class FilmController {
 	@Autowired
 	private DatabaseAccessorObject filmDao;
-	@RequestMapping(path = "home.do")
+	@RequestMapping(path = "index.do")
 	public String goHome() {
 		return "index.html";
 	}

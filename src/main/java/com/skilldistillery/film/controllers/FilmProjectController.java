@@ -21,7 +21,7 @@ public class FilmProjectController {
 	}
 	
 	// TODO: This is an attempt to load the home.jsp as the index (not working)
-	@RequestMapping(path="", method = RequestMethod.GET)
+	@RequestMapping(path="index.do", method = RequestMethod.GET)
 	public ModelAndView home() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("home.jsp");
