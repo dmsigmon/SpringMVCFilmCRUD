@@ -4,6 +4,18 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Film {
+	private int id;
+	private String title;
+	private String description;
+	private Integer releaseYear;
+	private String language;
+	private Integer rentalDuration;
+	private Double rentalRate;
+	private Integer length;
+	private Double replacementCost;
+	private String rating;
+	private String[] specialFeatures;
+	private List<Actor> actors;
 
 	public int getId() {
 		return id;
@@ -195,18 +207,6 @@ public class Film {
 	}
 
 
-	private int id;
-	private String title;
-	private String description;
-	private Integer releaseYear;
-	private String language;
-	private Integer rentalDuration;
-	private Double rentalRate;
-	private Integer length;
-	private Double replacementCost;
-	private String rating;
-	private String[] specialFeatures;
-	private List<Actor> actors;
 	
 	public Film(int id, String title, String description, Integer releaseYear, String language, Integer rentalDuration,
 			Double rentalRate, Integer length, Double replacementCost, String rating, String[] specialFeatures,
