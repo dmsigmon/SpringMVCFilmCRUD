@@ -18,6 +18,13 @@ import com.skilldistillery.film.entities.Film;
 
 @Controller
 public class FilmController {
+	@RequestMapping(path="index.do", method=RequestMethod.GET)
+	  public ModelAndView index() {
+	    ModelAndView mv = new ModelAndView();
+	    mv.setViewName("WEB-INF/home.jsp");
+	    return mv;
+	  }
+
 	@Autowired
 	private DatabaseAccessorObject filmDao;
 	@RequestMapping(path = "home.do")

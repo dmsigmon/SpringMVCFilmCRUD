@@ -18,4 +18,3 @@
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 </web-app>
-
