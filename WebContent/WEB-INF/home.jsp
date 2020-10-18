@@ -1,6 +1,6 @@
 
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,13 +15,12 @@
 <body>
 	Get Film:
 	<form action="getFilm.do" method="GET">
-		<input type="text" name="filmId" />
-		<br />
-		<input type="submit"value="Submit" />
-		<br />
+		<input type="text" name="filmId" /> <br /> <input type="submit"
+			value="Submit" /> <br />
 	</form>
-	
+
 	Add Film
+	<a href="addFilm.jsp">Add Film</a>
 	<form action="addFilm.do" method="POST">
 		<input type="text" name="title" />
 		<br />
@@ -29,7 +28,7 @@
 		<br />
 		<input type="submit"value="Submit" />
 		<br />
-	</form>
+	</form> 
 	
 	Search:
 	<form action="searchFilms.do" method="GET">

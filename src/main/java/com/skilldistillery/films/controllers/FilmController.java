@@ -27,10 +27,10 @@ public class FilmController {
 
 	@Autowired
 	private DatabaseAccessorObject filmDao;
-	@RequestMapping(path = "index.do")
-	public String goHome() {
-		return "index.html";
-	}
+//	@RequestMapping(path = "index.do")
+//	public String goHome() {
+//		return "index.html";
+//	}
 	@RequestMapping(path = "searchFilmByIDForm.do")
 	public ModelAndView searchFilmByID() {
 		ModelAndView mv = new ModelAndView("WEB-INF/searchFilmByIDForm.html");
@@ -46,13 +46,13 @@ public class FilmController {
 		mv.setViewName("WEB-INF/searchFilmByID.jsp");
 		return mv;
 	}
-	@RequestMapping(path = "addFilmForm.do", method = RequestMethod.GET)
-	public ModelAndView newFilmForm(@Valid Film film) {
-		ModelAndView mv = new ModelAndView();
-		mv.setViewName("WEB-INF/addFilmForm.jsp");
-		return mv;
-	}
-	@RequestMapping(path = "addFilmNew.do", method = RequestMethod.POST)
+//	@RequestMapping(path = "addFilmForm.do", method = RequestMethod.GET)
+//	public ModelAndView newFilmForm(@Valid Film film) {
+//		ModelAndView mv = new ModelAndView();
+//		mv.setViewName("WEB-INF/addFilmForm.jsp");
+//		return mv;
+//	}
+	@RequestMapping(path = "addFilm.do", method = RequestMethod.POST)
 	public ModelAndView newFilm(@Valid Film film, Errors errors) {
 		ModelAndView mv = new ModelAndView();
 		Film newFilm = filmDao.createFilm(film);
