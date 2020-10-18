@@ -11,7 +11,7 @@ public interface DatabaseAccessor {
 	  public List<Actor> findActorsByFilmId(int filmId);
 	  public List<Film> searchFilms(String keyword);
 	  public void close();
-	boolean deleteFilm(int filmID);
+	  boolean deleteFilm(int filmID);
 	Film createFilm(Film film);
 	Film saveFilmAllFields(int filmID, Film film);
 
