@@ -13,22 +13,25 @@
 <title>Film MVC App</title>
 </head>
 <body>
-	Get Film:
+	Get Film by ID:
 	<form action="searchFilmByID.do" method="GET">
 		<input type="text" name="filmID" /> <br /> <input type="submit"
 			value="Submit" /> <br />
 	</form>
 
-	Add Film
-	<a href="addFilm.jsp">Add Film</a>
-	<form action="addFilm.do" method="POST">
-		<input type="text" name="title" />
-		<br />
-		TODO: implement additional fields for addFilm controller method
-		<br />
-		<input type="submit"value="Submit" />
-		<br />
-	</form> 
+	Create Film
+	<form action="createFilm.do" method="POST">
+		 Add your film: <br> 
+		 Enter Title: <input type="text" name="title"><br>
+		 Enter Description: <input type="text" name="description"><br>
+		 Enter Release Year: <input type="number" name="releaseYear"><br>
+		 Enter Rating <input type="text" name="rating">
+		 Enter Language ID <input type="number" name="language_id"> 
+		<input type="submit" value="Add your film">
+	</form>
+	
+	
+	
 	
 	Search:
 	<form action="searchFilms.do" method="GET">

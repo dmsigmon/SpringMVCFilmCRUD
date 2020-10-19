@@ -9,6 +9,7 @@ public class Film {
 	private String description;
 	private Integer releaseYear;
 	private String language;
+	private Integer language_id;
 	private Integer rentalDuration;
 	private Double rentalRate;
 	private Integer length;
@@ -16,6 +17,7 @@ public class Film {
 	private String rating;
 	private String[] specialFeatures;
 	private List<Actor> actors;
+	
 
 	public int getId() {
 		return id;
@@ -23,6 +25,13 @@ public class Film {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+	public void setLanguage_id(int language_id) {
+		this.language_id = language_id;
+	}
+	
+	public Integer getLanguage_id() {
+		return language_id;
 	}
 
 	public String getTitle() {
@@ -200,7 +209,7 @@ public class Film {
 
 	@Override
 	public String toString() {
-		return "Film [id=" + id + ", title=" + title + ", description=" + description + ", releaseYear=" + releaseYear
+		return "Film [id=" + id +  ", title=" + title + ", description=" + description + ", releaseYear=" + releaseYear
 				+ ", language=" + language + ", rentalDuration=" + rentalDuration + ", rentalRate=" + rentalRate
 				+ ", length=" + length + ", replacementCost=" + replacementCost + ", rating=" + rating
 				+ ", specialFeatures=" + Arrays.toString(specialFeatures) + ", actors=" + actors + "]";
