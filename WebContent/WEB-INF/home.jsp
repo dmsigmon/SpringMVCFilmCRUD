@@ -14,8 +14,8 @@
 </head>
 <body>
 	Get Film:
-	<form action="getFilm.do" method="GET">
-		<input type="text" name="filmId" /> <br /> <input type="submit"
+	<form action="searchFilmByID.do" method="GET">
+		<input type="text" name="filmID" /> <br /> <input type="submit"
 			value="Submit" /> <br />
 	</form>
 

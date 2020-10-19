@@ -7,7 +7,7 @@
 <title>Film - ${film.getTitle()}</title>
 </head>
 <body>
-	Title: ${film.getTitle()}
+	Title: ${film.title}
 	<br />
 	
 	TODO: print other film fields nicely
@@ -20,7 +20,7 @@
 	TODO: form submit button for existing deleteFilm.do action
 	<br />
 	
-	Film toString: ${film}
+	
 	<br />
 </body>
 </html>
